@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Notes App</title>
+</head>
+
+<body>
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><b>Magic Notes 🚀</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.youtube.com/c/CollegeMatters" target="_blank">YouTube<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link"
+                        href="https://drive.google.com/file/d/1YX_diXIs3cot8Sg_At5AaNd8FLHZ-mVv/view?usp=sharing"
+                        target="_blank">Resume<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.linkedin.com/in/ashutosh-kumar-384387201/"
+                        target="_blank">LinkedIn<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://github.com/ashusnapx" target="_blank">GitHub<span
+                            class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchTxt">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- navabr ends -->
+
+    <!-- container starts -->
+    <div class="container my-3">
+        <h1><b>Namaste 🙏🏻</b></h1>
+
+        <!-- cards for input starts here -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Write your note here 👇</h5>
+                <!-- text area begins -->
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <!-- text area ends -->
+
+                <!-- button to add not starts here -->
+                <button href="#" class="btn btn-primary" id="addBtn">Add Note ✅</button>
+                <!-- button to add not ends here -->
+            </div>
+        </div>
+        <!-- cards for input ends here -->
+
+        <!-- cards output starts here -->
+        <hr>
+        <h1><b>Aapke Notes ❤️</b></h1>
+        <hr>
+
+        <div id="notes" class="row container-fluid">
+            <!-- notes display via cards start -->
+            <div class="noteCard my-2 mx-2" style="width: 18rem;">
+            </div>
+            <!-- notes display via cards end -->
+        </div>
+        <!-- cards output ends here -->
+
+    </div>
+    <!-- container ends -->
+
+
+    <!-- script starts -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- script ends -->
+</body>
+
+</html>
